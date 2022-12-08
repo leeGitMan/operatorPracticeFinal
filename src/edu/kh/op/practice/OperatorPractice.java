@@ -51,6 +51,7 @@ public class OperatorPractice {
 	
 	public void practice3() {
 		
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("국어 : ");
@@ -66,7 +67,13 @@ public class OperatorPractice {
 		double avg = sum / 3.0;
 		
 		System.out.println("합계 : " + sum);
-		System.out.printf("평균 : %.1f", avg); // printf 는  + 안쓴다 , 쓰는 거 깜빡하지말자
+		System.out.printf("평균 : %.1f\n", avg); // printf 는  + 안쓴다 , 쓰는 거 깜빡하지말자
+		
+		boolean result  = (kor >= 40 )&& (eng >= 40) && (math >= 40) && (avg >= 60);
+		System.out.println(result ? "pass" : "fail");
+		
+		
+		
 		
 		
 		
@@ -75,6 +82,8 @@ public class OperatorPractice {
 		
 		
 	}
+	
+	
 	
 	
 }
